@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>关于js的工具</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/util/mecUtil.js"></script>
+</head>
+<body>
+	<table id="loginTab">
+		<caption id="loginWelcome">欢迎注册</caption>
+		<tr>
+			<td class="celLeft">账号</td>
+			<td class="celRight">
+				<input class="txtWidth" type="text" name="id" 
+				placeholder="3到12个字母或汉字">
+			</td>
+		</tr>
+		<tr>
+			<td class="celLeft">密码</td>
+			<td class="celRight">
+				<input class="txtWidth" type="password" 
+				name="password" placeholder="不能出现特殊字符">
+			</td>
+		</tr>
+		<tr>
+			<td class="celLeft">性别</td>
+			<td class="celRight">
+				<input id="sexMale" type="radio" name="sex"
+				checked="true">
+				<label for="sexMale">男</label>
+
+				<input id="sexFemale" type="radio" name="sex">
+				<label for="sexFemale">女</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="celLeft">出生日期</td>
+			<td class="celRight">
+				<select id="birthYear">
+				</select>
+				<label>年</label>
+
+				<select id="birthMonth">
+				</select>
+				<label>月</label>
+
+				<select id="birthDate">
+				</select>
+				<label>日</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="celLeft">爱好</td>
+			<td id="hobbies" class="celRight">
+				<input type="checkbox" name="hobby" value="懒觉"
+				id="hobbySleep">
+				<label for="hobbySleep">懒觉</label>
+
+				<input type="checkbox" name="hobby" 
+				value="打呼噜" id="hobbyHulu">
+				<label for="hobbyHulu">打呼噜</label>
+
+				<input type="checkbox" name="hobby" 
+				value="放屁" id="hobbyFunPee">
+				<label for="hobbyFunnyPee">放屁</label>
+				<br>
+				<input type="checkbox" name="hobby" 
+				value="坑爹" id="hobbyKillFar">
+				<label for="hobbyKillFar">坑爹</label>
+
+				<br>
+				<input type="button" id="hobbySelectAll"
+				value="全选">
+				<input type="button" id="hobbySelectRev"
+				value="反选">
+				<input type="button" id="hobbySelectNone"
+				value="重置">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input class="hcenter" type="submit">
+			</td>
+		</tr>
+	</table>
+</body>
+	<script type="text/javascript" src="./js/index.js"></script>
+</html>
